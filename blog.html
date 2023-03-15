@@ -35,9 +35,9 @@
         <h1 class="text-5xl font-bold">Common <span style="color: rgb(23, 152, 23);">Questions</span></h1>
         <h5 class="text-lg text-center font-bold my-2">Here are some common questions that every web developer should know.</h5>
     </header>
-    <main class=" p-10 w-11/12 mx-auto rounded">
-        <div class="my-10 bg-slate-100 shadow-lg p-4">
-            <h3 class="text-3xl font-semibold my-6">Q-1: What are the differences between map, filter, forEach and find?</h3>
+    <main class=" p-10 md:w-11/12 mx-auto rounded">
+        <div class="my-10 bg-slate-100 shadow-lg p-5">
+            <h3 class="text-3xl font-semibold mb-6">Q-1: What are the differences between map, filter, forEach and find?</h3>
             <h3 class="text-lg "><strong>Answer:</strong> There are some differences between map, filter, forEach and find. Below is about them:
                 <div class="md:grid md:grid-cols-2 gap-3 my-2">
                     <p><strong>map:</strong> The map method is applied to each element in an array and it returns a new array of the same length with the results.</p>
@@ -50,8 +50,8 @@
                 </div> 
             </h3>
         </div>
-        <div class="my-10 bg-slate-100 shadow-lg p-4">
-            <h3 class="text-3xl font-semibold my-6">Q-2: What are the differences between Local Storage, Session Storage and Cookies?</h3>
+        <div class="my-10 bg-slate-100 shadow-lg p-5">
+            <h3 class="text-3xl font-semibold mb-6">Q-2: What are the differences between Local Storage, Session Storage and Cookies?</h3>
             <h3 class="text-lg "><strong>Answer:</strong> There are some differences between Local Storage, Session Storage and Cookies. Below is about them:
                 <div class="md:grid md:grid-cols-2 gap-3 my-2">
                     <p><strong>Local Storage:</strong> Local Storage is a way of storing data on the client-side that persists even after the browser is closed. The data is stored in key-value pairs and can be accessed and modified using JavaScript.</p>
@@ -63,7 +63,15 @@
                 </div> 
             </h3>  
         </div>
-        
+        <div class="my-10 bg-slate-100 shadow-lg p-5">
+            <h3 class="text-3xl font-semibold mb-6">Q-3: What is Event-Loop? How does it work?</h3>
+            <h3 class="text-lg "><strong>Answer:</strong> 
+                <p>The Event Loop is a process in JavaScript that allows for non-blocking execution of code by continuously checking a queue for pending tasks to be executed, moving them to the call stack for execution when the stack is empty.</p>
+                <br>
+                <p>When an event occurs in JS, such as a user clicking a button, the event is added to a task queue. The event loop continuously checks this queue for any pending tasks. If the call stack is empty, the event loop moves the next task in the queue to the call stack for execution. This process continues as long as there are tasks in the queue, allowing JavaScript to handle multiple tasks simultaneously without freezing or crashing.</p>
+            </h3>
+        </div>
+       
     </main>
     <footer class="py-10 text-center text-sm">
         Copyright © 2023 Quiz Hero All Rights Reserved.

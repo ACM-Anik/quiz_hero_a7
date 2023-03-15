@@ -30,11 +30,28 @@
         };
       </script>
 </head>
-<body>
-    <header>
-
+<body class="container mx-auto">
+    <header class="text-center my-8 text-zinc-800">
+        <h1 class="text-5xl font-bold">Common <span style="color: rgb(23, 152, 23);">Questions</span></h1>
+        <h5 class="text-lg text-center font-bold my-2">Here are some common questions that every web developer should know.</h5>
     </header>
-    <main></main>
+    <main class=" p-10 w-11/12 mx-auto rounded">
+        <div class="my-10 bg-slate-100 shadow-lg p-4">
+            <h3 class="text-3xl font-semibold my-6">Q-1: What are the differences between map, filter, forEach and find?</h3>
+            <h3 class="text-lg "><strong>Answer:</strong> There are some differences between map, filter, forEach and find. Below is about them:
+                <div class="md:grid md:grid-cols-2 gap-3 my-2">
+                    <p><strong>map:</strong> The map method is applied to each element in an array and it returns a new array of the same length with the results.</p>
+                   
+                    <p><strong>filter:</strong> The filter method creates a new array with all elements that pass the condition by the provided function. It filters certain elements.</p>
+                    
+                    <p><strong>forEach:</strong> The forEach method executes a provided function once for each element in an array. It performs on each elements but does not create a new array.</p>
+                    
+                    <p><strong>find:</strong> The find method returns the value of the first element in an array that fulfills the provided function.</p>   
+                </div> 
+            </h3>
+        </div>
+        
+    </main>
     <footer class="py-10 text-center text-sm">
         Copyright © 2023 Quiz Hero All Rights Reserved.
     </footer>

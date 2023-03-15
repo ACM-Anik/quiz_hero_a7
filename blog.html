@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Document</title>
+    <title>Blog OF Quiz Hero</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -30,7 +30,7 @@
         };
       </script>
 </head>
-<body class="container mx-auto">
+<body class="container mx-auto font-common">
     <header class="text-center my-8 text-zinc-800">
         <h1 class="text-5xl font-bold">Common <span style="color: rgb(23, 152, 23);">Questions</span></h1>
         <h5 class="text-lg text-center font-bold my-2">Here are some common questions that every web developer should know.</h5>
@@ -67,11 +67,17 @@
             <h3 class="text-3xl font-semibold mb-6">Q-3: What is Event-Loop? How does it work?</h3>
             <h3 class="text-lg "><strong>Answer:</strong> 
                 <p>The Event Loop is a process in JavaScript that allows for non-blocking execution of code by continuously checking a queue for pending tasks to be executed, moving them to the call stack for execution when the stack is empty.</p>
-                <br>
-                <p>When an event occurs in JS, such as a user clicking a button, the event is added to a task queue. The event loop continuously checks this queue for any pending tasks. If the call stack is empty, the event loop moves the next task in the queue to the call stack for execution. This process continues as long as there are tasks in the queue, allowing JavaScript to handle multiple tasks simultaneously without freezing or crashing.</p>
+
+                <p class="my-3">When an event occurs in JS, such as a user clicking a button, the event is added to a task queue. The event loop continuously checks this queue for any pending tasks. If the call stack is empty, the event loop moves the next task in the queue to the call stack for execution. This process continues as long as there are tasks in the queue, allowing JavaScript to handle multiple tasks simultaneously without freezing or crashing.</p>
             </h3>
         </div>
-       
+        <div class="my-10 bg-slate-100 shadow-lg p-5">
+            <h3 class="text-3xl font-semibold mb-6">Q-4: Explain the functions quizTimer and chooseQuiz in simple way?</h3>
+            <h3 class="text-lg "><strong>Answer:</strong>
+                <p><strong>quizTimer:</strong> The quizTimer function is used to count the duration of the quiz-execution. Also it changes the color of the count while counting. When the quiz completed, quizTimer function stops.</p>
+                <p><strong>chooseQuiz:</strong> The function chooseQuiz is used to choose the individuals quiz options. It gives user to select any option by click, also can change selected one by another one. after this, it calls the displayAnswers function.</p>
+            </h3>
+        </div>
     </main>
     <footer class="py-10 text-center text-sm">
         Copyright © 2023 Quiz Hero All Rights Reserved.

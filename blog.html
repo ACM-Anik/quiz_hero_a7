@@ -74,8 +74,9 @@
         <div class="my-10 bg-slate-100 shadow-lg p-5">
             <h3 class="text-3xl font-semibold mb-6">Q-4: Explain the functions quizTimer and chooseQuiz in simple way?</h3>
             <h3 class="text-lg "><strong>Answer:</strong>
-                <p><strong>quizTimer:</strong> The quizTimer function is used to count the duration of the quiz-execution. Also it changes the color of the count while counting. When the quiz completed, quizTimer function stops.</p>
-                <p><strong>chooseQuiz:</strong> The function chooseQuiz is used to choose the individual quiz options. It gives user to select any option by click, also can change selected one by another one. after this, it calls the displayAnswers function.</p>
+                <p><strong>quizTimer:</strong> The quizTimer function with 'dismiss' parameter does two things. First, check a condition that 'dismiss' is true of false. If true then calls clearInterval function. Second, it also count the duration of the quiz-execution. When the quiz completed, quizTimer function stops it.</p>
+
+                <p class="my-2"><strong>chooseQuiz:</strong> The function named chooseQuiz with two parameters(index, givenAns) is used to find the given questions' answers by if-else condition as it gives user to choose any individual option by click, also can change selected one by another one. after this, it calls the displayAnswers function to display.</p>
             </h3>
         </div>
     </main>
